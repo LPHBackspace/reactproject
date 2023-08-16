@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link} from 'react-router-dom';
 import { Button } from './Button';
-import './Navbar.css';
+import './Navbar.css'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -25,7 +25,9 @@ function Navbar() {
             <Link to="/" className="navbar-logo">
                 Leleo <ion-icon name="aperture-outline"></ion-icon>
             </Link>
-           
+            <div className='menu-icon' onClick={handleClick}>
+              <ion-icon name={click ? 'close-circle-outline' : 'menu-outline'}></ion-icon>
+            </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
                 <Link to='/' className='nav-links' onClick={closeMobileMenu}>
@@ -44,15 +46,16 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                  Sign-up
+                  {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
                 </Link>
               </li>
             </ul>
 
-            <div className='menu-icon' onClick={handleClick}>
-              <ion-icon name={click ? 'close-circle-outline' : 'menu-outline'}></ion-icon>
-            </div>
-            {button & <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+            
+
+          
+
+            
         </div>
     </nav>
   )
