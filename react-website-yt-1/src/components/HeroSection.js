@@ -10,13 +10,13 @@ function HeroSection() {
         <div className='hero-img'></div>
 
         <div className='hero-content'>
-          
-          <h1>DRAGONBALL FIGHTERZ</h1>
-          <p>O melhor jogo de luta anime</p>
+
+          <h1>MERCEDES BENZ</h1>
+          <p>O melhor, ou nada</p>
 
           <div className='hero-btns'>
             <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>GET STARTED</Button>
-            <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>WHAT TRAILER<ion-icon name="play-circle-outline"></ion-icon></Button>
+            <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>WHATS NEW<ion-icon name="play-circle-outline"></ion-icon></Button>
           </div>
 
         </div>

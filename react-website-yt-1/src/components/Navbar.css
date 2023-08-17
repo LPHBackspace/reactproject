@@ -13,6 +13,9 @@
 .navbar{    
     padding: 20px 0;
     background-color: #111;
+    border-bottom: 5px solid var(--primary);
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-container{
